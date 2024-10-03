@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    height: 100svh;
+    max-height: 100svh;
+
+    width: 100svw;
+    max-width: 100svw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header */
+header { 
+    background-color: #8a8787; 
+    padding: 20px 0; 
+    color: white; 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+} 
+ 
+.container { 
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+ 
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #f0a500; 
+} 
+ 
+nav ul { 
+    list-style: none; 
+    display: flex; 
+} 
+ 
+nav ul li { 
+    margin-left: 20px; 
+} 
+ 
+nav ul li a { 
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px; 
+    transition: color 0.3s; 
+} 
+ 
+nav ul li a:hover { 
+    color: #f0a500; 
+}
+
+/* posts */
+.posts{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.post{
+padding: 10px;
+width: 400px;
+border-radius: 20px;
+height: 480px;
+box-shadow: 1px 2px 10px rgb(128, 126, 126);
+background-color:white;
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: space-between;
+}
+.user{
+    display: flex;
+    gap: 10px;
+
+}
+.user__info{
+    display: flex;
+    flex-direction: column;
+}
+.user__img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.user__email{
+    color: rgb(43, 42, 42);
+    font-size: 18px;
+  
+}
+.post__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.post__body{
+    color: rgb(63, 62, 62);
+}
+.post__react{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    border: 1px solid rgb(173, 170, 170);
+    padding: 3px;
+    border-radius: 10px;
+}
+.react{
+    display: flex;
+    gap: 6px;
+}
+.react .like{
+color: red;
+}
+.react .dislike{
+    color: blue;
+    }
+.p1{
+    color: blue;
+    margin-left: 10px;
+}

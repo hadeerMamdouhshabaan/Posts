@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f8fa; 
+    margin: 0;
+    padding: 0;
+}
+.profile {
+    width: 90%; 
+    max-width: 800px; 
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.header {
+    position: relative;
+}
+
+.header-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #f0a500; 
+}
+
+.profile-overlay {
+    position: absolute;
+    top: 140px; 
+    left: 20px; 
+    z-index: 1; 
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+.profile-info {
+    position: absolute;
+    top: 250px; 
+    left: 20px;
+    z-index: 2; 
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; 
+}
+
+.username {
+    font-size: 14px;
+    color: #f0a500; 
+}
+
+p {
+    margin: 5px 0;
+    color: #555; 
+}
+
+.tweet-container {
+    padding: 20px; 
+    margin-top: 130px; 
+}
+
+.tweet {
+    border-top: 1px solid #e0e0e0;
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 80%;
+    height: 30%;
+    margin-left: 100px;
+    background-color: #f9f9f9; 
+}
+
+.tweet-content {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.tweet-stats {
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f0a500;
+}
+
+.tweet-stats span {
+    margin-right: 15px;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tweet-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-header-info span {
+    font-size: 14px;
+    color: #f0a500; 
+}
+
+.tweet-header-info .tweet-username {
+    color: #657786;
+}
+
+.tweet-time {
+    color: #aab8c2; 
+}
+#user-namee {
+    color: rgba(0, 0, 0, 0.448);
+}
+i:hover {
+    color: rgba(0, 0, 0, 0.448);
+}

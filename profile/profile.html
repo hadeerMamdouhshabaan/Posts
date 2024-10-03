@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+    <div class="profile">
+        <div class="header">
+            <img id="header-img" alt="Header Image" class="header-img">
+            <div class="profile-overlay">
+                <img id="profile-pic" alt="Profile Picture" class="profile-pic">
+            </div>
+        </div>
+        <div class="profile-info">
+            <h2 id="user-name"></h2>
+            <span id="user-namee" class="user-message"></span> 
+        </div>
+        <div class="tweet-container">
+            <div class="tweet">
+                <div class="tweet-header">
+                    <img id="tweet-profile-pic" alt="Profile" class="tweet-profile-pic">
+                    <div class="tweet-header-info">
+                        <span id="user-name-tweet"></span>
+                        <span class="tweet-username"></span>
+                    </div>
+                </div>
+                <p id="post-content" class="tweet-content"></p>
+                <div class="tweet-stats">
+                    <span id="like-count"><i class="fa-solid fa-thumbs-up"></i></span> 
+                    <span id="dislike-count"><i class="fa-solid fa-thumbs-down"></i></span> 
+                    <span id="view-count"><i class="fa-solid fa-eye"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./profile.js"></script>
+</body>
+</html>

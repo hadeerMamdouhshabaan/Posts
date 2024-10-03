@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+
+    padding: 80px;
+    margin-left: 25px;
+
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    gap: 20px;
+    padding-top: 70px;
+}
+
+.cards {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 500px;
+    padding: 20px;
+    background-color: rgb(194, 188, 188);
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.cards .image1 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.cards .image2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid white;
+    background-color: white;
+    object-fit: cover;
+}
+
+
+.cards h2 {
+    margin-top: 120px;
+}
+
+.cards p {
+    margin-top: 10px;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.add-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color:#f0a500; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #748ba3;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .users {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .users {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:470px) {
+
+    .users {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
